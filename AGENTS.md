@@ -29,6 +29,8 @@ When in doubt, read both.
 
 ## Key Reminders
 
+- **Do not use `middleware.ts` in this project**: In this Next.js 16 codebase, `middleware.ts` is deprecated and must never be used. Always use `proxy.ts` instead.
+
 - **Next.js 16**: `middleware.ts` is renamed to `proxy.ts`. `params` and `searchParams` are Promises — always `await` them.
 - **Server Components first**: Do not add `'use client'` unless the component requires client-side interactivity.
 - **No `any`**: Use proper types or `unknown` with narrowing.
