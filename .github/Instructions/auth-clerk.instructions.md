@@ -1,3 +1,7 @@
+---
+description: Read this file before working on any authentication-related code in this project. It outlines the rules and standards for using Clerk as the authentication provider.
+---
+
 # Auth Rules (Clerk Only)
 
 Use these rules for all authentication and route protection work in this project.

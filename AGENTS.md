@@ -10,23 +10,6 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 This is a URL shortening service built with Next.js 16, React 19, TypeScript, Clerk auth, Neon PostgreSQL, Drizzle ORM, and shadcn/ui. Before writing or modifying any code, read and follow the standards defined in the docs below.
 
-## Instruction Files
-
-> ⚠️ **CRITICAL — NON-NEGOTIABLE RULE** ⚠️
->
-> You **MUST** read the relevant `/docs/` instruction file **in full** using the `read_file` tool **BEFORE writing or modifying any code** in that area. This is not optional. Do not rely on memory, prior context, or assumptions. Every code change requires a fresh read of the relevant doc first.
->
-> **Skipping this step is never acceptable, regardless of how simple the task appears.**
-
-All coding standards are documented in `/docs/`. The files are:
-
-- `/docs/auth-clerk.md` — Clerk-only auth policy, protected routes, auth redirects, and modal-only sign in/sign up behavior.
-- `/docs/ui-shadcn.md` — Mandatory shadcn/ui-only policy for all UI elements; no custom UI components.
-
-Before touching any auth-related code → read `/docs/auth-clerk.md`.
-Before touching any UI code → read `/docs/ui-shadcn.md`.
-When in doubt, read both.
-
 ## Key Reminders
 
 - **Do not use `middleware.ts` in this project**: In this Next.js 16 codebase, `middleware.ts` is deprecated and must never be used. Always use `proxy.ts` instead.

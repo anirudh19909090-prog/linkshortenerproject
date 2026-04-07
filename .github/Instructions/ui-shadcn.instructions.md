@@ -1,3 +1,6 @@
+---
+description: Read this before creating or modifying any UI components in this project. This file defines the policy for using shadcn/ui as the exclusive source of UI primitives and patterns.
+---
 # shadcn/ui-Only UI Policy
 
 ## Purpose
